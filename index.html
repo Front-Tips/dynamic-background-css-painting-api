@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Paint API</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/tutorial.css" />
+  </head>
+  <body>
+    <section id="checkboard"></section>
+    <script>
+      // Adding a paint worklet
+      // to the CSS painting API
+      CSS.paintWorklet
+        .addModule("./js/tutorial.js")
+        .catch(console.error);
+    </script>
+  </body>
+</html>

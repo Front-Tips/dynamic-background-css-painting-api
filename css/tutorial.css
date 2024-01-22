@@ -1,0 +1,12 @@
+#checkboard {
+  --checkerboard-tile-size: 50;
+
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+
+  /* Apply the `checkerboard` `paint` worklet
+    as the background image */
+  background-image: paint(checkerboard);
+}
